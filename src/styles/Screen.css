@@ -1,0 +1,9 @@
+.screen-container{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px);
+    background: linear-gradient(-90deg, #3A96DD, #3A96DDE6);
+    border: #3A96DD 1px solid;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
