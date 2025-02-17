@@ -1,9 +1,24 @@
 .screen-container{
-    position: relative;
+    position: absolute;
+    height: 100%;
     width: 100%;
-    height: calc(100% - 50px);
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    align-content: flex-start;    
     background: linear-gradient(-90deg, #3A96DD, #3A96DDE6);
-    border: #3A96DD 1px solid;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+}
+
+#WindowsIcone{
+    position: absolute;
+    top: calc(45% + 24px);
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.667);
+    font-size: 18vw;
+    filter: drop-shadow(rgba(18, 18, 18, 0.5) 2px 2px 2px);
+}
+
+svg{
+    height: 1em;
 }

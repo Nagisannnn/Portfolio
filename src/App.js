@@ -1,4 +1,4 @@
-import './css/App.css';
+import './styles/App.css';
 import Screen from "./composent/screen";
 import Taskbar from "./composent/Taskbar";
 
