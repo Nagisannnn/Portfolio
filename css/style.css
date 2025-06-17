@@ -1,0 +1,179 @@
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #f5fff5;
+  color: #1a4d1a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #2e8b57;
+  color: white;
+  padding: 1rem;
+}
+
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a.active {
+  background: #b4e0b4;
+  color: #2e8b57;
+  border-radius: 4px;
+  padding: 0.3em 0.8em;
+  transition: background 0.2s, color 0.2s;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #2e8b57;
+  text-align: center;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem; /* Ajoute de l'espace entre chaque .skill */
+  margin-top: 0.5rem;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 95%;           /* Ajouté : réduit légèrement la largeur */
+  margin-left: auto;    /* Centre le container */
+  margin-right: auto;
+}
+
+#competences h3 {
+  margin-bottom: 0.5rem;
+  color: #1a4d1a;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #b4e0b4;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.skill {
+  background: #e6ffe6;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #2e8b57;
+  margin: 0.2rem 0;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+footer {
+  background: #2e8b57;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.spacer {
+  height: 60px;
+}
+
+.project a {
+  display: block;
+  margin-top: 0.5rem;
+  color: #2e8b57;
+  text-decoration: underline;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project {
+  background: #e6ffe6;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 calc(33% - 2rem);
+  border: 2px solid #b4e0b4;
+}
+
+#competences {
+    width: 90vw;         /* Réduit la largeur */
+    max-width: 1000px;   /* Garde une limite raisonnable */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Style pour les listes UL/OL en mode "tags" */
+section ul, section ol {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+section ul li, section ol li {
+  background: #b4e0b4;
+  color: #225c36;
+  border-radius: 20px;
+  padding: 0.4em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(46,139,87,0.07);
+  transition: background 0.2s, color 0.2s;
+  margin: 0;
+  display: inline-block;
+}
+
+section ul li:hover, section ol li:hover {
+  background: #2e8b57;
+  color: #fff;
+  cursor: default;
+}
+
+.projects img,
+section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* 1 colonne sur mobile */
+  }
+}

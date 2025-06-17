@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compétences - Douze & Fromage</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="competences.html" class="active">Compétences</a>
+      <a href="projets.html">Projets</a>
+  </header>
+  <main>
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div style="display: flex; justify-content: center; align-items: flex-start; gap: 2rem; flex-wrap: wrap;">
+        <canvas id="camembert" width="400" height="400" style="display:block;"></canvas>
+        <div id="camembert-legend" style="margin-top:1.5rem;"></div>
+      </div>
+      <div class="skills-container">
+        <div>
+          <h3>Développement Logiciel</h3>
+          <div class="skills" id="logiciel">
+            <div class="skill">C / ARM Assembler</div>
+            <div class="skill">Java / Swing / AWT</div>
+            <div class="skill">Python</div>
+          </div>
+        </div>
+        <div>
+          <h3>Développement Web</h3>
+          <div class="skills" id="web">
+            <div class="skill">HTML5 / CSS3 / JavaScript</div>
+            <div class="skill">Vue.js</div>
+            <div class="skill">PHP / Symfony</div>
+          </div>
+        </div>
+        <div>
+          <h3>Développement Mobile</h3>
+          <div class="skills" id="mobile">
+            <div class="skill">Kotlin</div>
+          </div>
+        </div>
+        <div>
+          <h3>Bases de Données</h3>
+          <div class="skills" id="bdd">
+            <div class="skill">SQL / PL-SQL / NoSQL</div>
+            <div class="skill">MySQL / PostgreSQL</div>
+            <div class="skill">Conception / Modélisation de BDD</div>
+          </div>
+        </div>
+        <div>
+          <h3>Infrastructure & DevOps</h3>
+          <div class="skills" id="infra">
+            <div class="skill">Linux (Ubuntu, Debian) / Windows 7,10,11</div>
+            <div class="skill">Docker / Kubernetes</div>
+            <div class="skill">Git / GitHub / GitLab</div>
+            <div class="skill">CI/CD / Tests unitaires</div>
+          </div>
+        </div>
+        <div>
+          <h3>Réseaux & Sécurité</h3>
+          <div class="skills" id="reseau">
+            <div class="skill">TCP/IP, Routage, Configuration réseau</div>
+            <div class="skill">Sécurité / RGPD</div>
+          </div>
+        </div>
+        <div>
+          <h3>Qualité & Ergonomie</h3>
+          <div class="skills" id="qualite">
+            <div class="skill">MVC / Clean Code</div>
+            <div class="skill">Ergonomie / IHM</div>
+            <div class="skill">Tests / Documentation</div>
+          </div>
+        </div>
+        <div>
+          <h3>Modélisation</h3>
+          <div class="skills" id="modelisation">
+            <div class="skill">UML</div>
+            <div class="skill">Diagrammes de séquence / cas d'utilisation</div>
+          </div>
+        </div>
+        <div>
+          <h3>Gestion de projet</h3>
+          <div class="skills" id="gestion">
+            <div class="skill">Agile / Scrum / Kanban</div>
+            <div class="skill">Travail en équipe / Suivi de projet</div>
+            <div class="skill">Veille technologique</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-contacts">
+      <a href="https://www.linkedin.com/in/c%C3%A9dric-badin-b9567a300/" target="_blank" title="LinkedIn">
+        <img src="./images/linkedin.png" alt="LinkedIn" height="36">
+      </a>
+      <a href="https://github.com/Nagisannnn" target="_blank" title="GitHub">
+        <img src="./images/github.png" alt="GitHub" height="36">
+      </a>
+      <a href="mailto:badincedric20@gmail.com" title="Mail">
+        <img src="./images/mail.png" alt="Mail" height="36">
+      </a>
+      <a href="./pdf/cv.pdf" target="_blank" title="CV">
+        <img src="./images/cv.png" alt="CV" height="36">
+      </a>
+    </div>
+    <p>&copy; 2025 Portfolio de Badin Cedric. Tous droits réservés</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
